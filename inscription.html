@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscription</title>
+    <script src="./scripts/inscription.js"></script>
+</head>
+<body>
+    <!-- Menu -->
+    <ul>
+        <li>
+            <a href="./index.html">Accueil</a>
+        </li>
+        <li>
+            <a href="./librairie.html">Librairie</a>
+        </li>
+        <li>
+            <a href="#">Inscription</a>
+        </li>
+    </ul>
+    
+    <!-- Formulaire -->
+    <form name="submitForm">
+        <label> Nom : 
+            <input type="text" name="nom" id="nom" placeholder="Doe" onblur="majuscule(this)">
+        </label>
+
+        <label> Prénom : 
+            <input type="text" name="prenom" id="prenom" placeholder="John" onblur="firstLetterMaj(this)">
+        </label>
+
+        <label> Âge : 
+            <input type="number" name="age" id="age" placeholder="12">
+        </label>
+
+        <label>Sexe : 
+            <label for="homme">Homme </label>
+            <input type="radio" name="sexe" id="homme" value="homme">
+            <label for="femme">Femme </label>
+            <input type="radio" name="sexe" id="femme" value="femme">
+            <label for="eponge">Éponge </label>
+            <input type="radio" name="sexe" id="eponge" value="eponge">
+        </label>
+
+        <label> Ville :
+            <select name="ville" id="ville">
+                <option value="Dunkerque">Dunkerque</option>
+                <option value="Lille">Lille</option>
+                <option value="Paris">Paris</option>
+                <option value="Calais">Calais</option>
+            </select>
+        </label>
+
+        <input type="button" value="Valider" onclick="onSubmit(submitForm)">
+    </form>
+</body>
+</html>

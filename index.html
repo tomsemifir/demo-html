@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accueil</title>
+    <script src="./scripts/index.js"></script>
+</head>
+
+<body>
+    <!-- Menu -->
+    <ul>
+        <li>
+            <a href="#">Accueil</a>
+        </li>
+        <li>
+            <a href="./librairie.html">Librairie</a>
+        </li>
+        <li>
+            <a href="./inscription.html">Inscription</a>
+        </li>
+    </ul>
+
+    <!-- Entrer nom + Bonjour -->
+    <div>
+        <h2>Dire Bonjour : </h2>
+        <input type="text" name="nom" id="nom">
+        <input type="button" value="Bonjour" placeholder="Prénom" onclick="direBonjour(nom)">
+    </div>
+    <div>
+        <h2>Calculatrice :</h2>
+        <input type="number" placeholder="Nombre 1" name="nbr1" id="nbr1">
+        <input type="number" placeholder="Nombre 2" name="nbr2" id="nbr2">
+        <input type="button" value="+" onclick="addition(nbr1, nbr2)">
+        <input type="button" value="-" onclick="soustraction(nbr1, nbr2)">
+        <input type="button" value="x" onclick="multiplication(nbr1, nbr2)">
+        <input type="button" value="/" onclick="division(nbr1, nbr2)">
+    </div>
+    
+</body>
+
+</html>
